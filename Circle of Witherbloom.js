@@ -38,8 +38,8 @@ var theCoD = AddSubClass("druid", "mage of witherbloom", {
 			minlevel : 1,
 			description : desc([
 				"As a bonus action, you can draw on a reservoir of life essence to empower yourself for 1 minute, or until you use this feature again. For the duration, you gain one of the following benefits of your choice:",
-				"Overgrowth. When you choose this benefit, and as a bonus action on subsequent turns while the benefit lasts, you can expend and roll one Hit Die. You regain a number of hit points equal to the number rolled plus your spellcasting ability modifier.",
-				"Withering Strike. When you deal damage, you can change the damage type to necrotic, and you ignore resistance to necrotic damage.",
+				"• Overgrowth. When you choose this benefit, and as a bonus action on subsequent turns while the benefit lasts, you can expend and roll one Hit Die. You regain a number of hit points equal to the number rolled plus your spellcasting ability modifier.",
+				"• Withering Strike. When you deal damage, you can change the damage type to necrotic, and you ignore resistance to necrotic damage.",
 				"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 			])
 		},
@@ -52,9 +52,9 @@ var theCoD = AddSubClass("druid", "mage of witherbloom", {
 				"When you finish a long rest, you can use an herbalism kit and a pot or cauldron to create magical brews.",
 				"You create a number of brews equal to your proficiency bonus. Each brew requires its own flask.",
 				"A brew retains its magical potency for 24 hours or until it is used. For each brew, choose one of the following effects:",
-				"Fortifying. When you create this brew, choose a damage type from the following list: cold, fire, necrotic, poison, or radiant. A creature can drink this brew or administer it to another creature as an action. The recipient gains resistance to the chosen damage type for 1 hour.",
-				"Quickening. A creature can drink this brew or administer it to another creature as an action. The recipient regains 2d6 hit points, and one disease or condition from the following list affecting the recipient ends (brew user's choice): charmed, frightened, paralyzed, poisoned, stunned.",
-				"Toxifying. As an action, a creature can apply this brew to a simple or martial weapon. The next time the weapon or a piece of ammunition fired by it hits a creature within 1 hour, the target takes 2d6 poison damage and must succeed on a Constitution saving throw against your spell save DC or be poisoned for 1 minute.",
+				"• Fortifying. When you create this brew, choose a damage type from the following list: cold, fire, necrotic, poison, or radiant. A creature can drink this brew or administer it to another creature as an action. The recipient gains resistance to the chosen damage type for 1 hour.",
+				"• Quickening. A creature can drink this brew or administer it to another creature as an action. The recipient regains 2d6 hit points, and one disease or condition from the following list affecting the recipient ends (brew user's choice): charmed, frightened, paralyzed, poisoned, stunned.",
+				"• Toxifying. As an action, a creature can apply this brew to a simple or martial weapon. The next time the weapon or a piece of ammunition fired by it hits a creature within 1 hour, the target takes 2d6 poison damage and must succeed on a Constitution saving throw against your spell save DC or be poisoned for 1 minute.",
 			])
 		},
 		"subclassfeature3" : {
