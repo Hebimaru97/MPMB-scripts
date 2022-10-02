@@ -15,12 +15,10 @@
 */
 
 var iFileName = "Druid - Mage of Witherbloom.js";
-RequiredSheetVersion(13.1.2);
 
 SourceList["UA1MoS:MoW"] = {
 	name : "Mage of Witherbloom",
-	abbreviation : "UA1MoS:MoW"
-	group : "WotC
+	abbreviation : "UA1MoS:MoW",
 	url : "https://dnd.wizards.com/unearthed-arcana/strixhaven",
 	date : "2021/6/08"
 };
@@ -67,7 +65,6 @@ var theCoD = AddSubClass("druid", "mage of witherbloom", {
 				"Your connection to the flow of life force deepens.",
 				"Once per turn when you deal necrotic damage or restore hit points using a spell, one target of the spell takes additional damage or regains additional hit points equal to your proficiency bonus."
 			]),
-
 		},
 		"subclassfeature4" : {
 			name : "Withering Vortex",
