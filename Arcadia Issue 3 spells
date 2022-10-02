@@ -1,0 +1,171 @@
+/*	-WHAT IS THIS?-
+	This file adds optional material to "MPMB's Character Record Sheet" found at https://flapkan.com/mpmb/charsheets
+	Import this file using the "Add Extra Materials" bookmark.
+	-KEEP IN MIND-
+	It is recommended to enter the code in a fresh sheet before adding any other information (i.e. before making your character with it).
+*/
+
+/*  -INFORMATION-
+	Subject:    Spells
+	Effect:     This script adds several necromancy spells to the Bard, Cleric,Druid, Ranger, Sorcerer, Warlock, and Wizard spell lists
+				These spells have been made by MCDM and can be found here: https://shop.mcdmproductions.com/products/arcadia-issue3
+				Please support the creators of this content on their Patreon: https://www.patreon.com/mcdm
+	Code by:	Hebi
+	Date:		2022-10-01 (sheet v13.1.2)
+*/
+var iFileName = "Arcadia Issue 3 Spells.js";
+RequiredSheetVersion(13.1.2);
+
+SourceList["ARC:3"] = {
+	name : "Arcadia Issue #3;Ten Spells you need in 5e",
+	abbreviation : "ARC:3",
+	group : "MCDM Arcadia",
+	url : "https://shop.mcdmproductions.com/products/arcadia-issue3",
+	date : "2021/03/24"
+};
+
+// Add the spells
+SpellsList["attract metal"] = {
+	name : "Attract Metal",
+	classes : ["bard", "druid", "sorcerer", "wizard"],
+	source : ["ARC:3", 10],
+	level : 2,
+	school : "Necro",
+	time : "1 a",
+	range : "30 ft",
+	components : "V,S",
+	duration : "Conc, 1 min",
+	save : "Str",
+	description : "push/pull metal, as action each round for duration; same or new;<500lbs 30 ft, else Str Sv; see book",
+	descriptionFull : "You create a magnetic field that allows you to push or pull metal objects. When you cast the spell, and as an action each round for the duration, you can exert your will on one metal object that you can see within range. You can affect the same target round after round, or choose a new one at any time. If you switch targets, the prior target is no longer affected by the spell. You can try to move a metal object that weighs up to 500 pounds. If the object isn’t being worn or carried, you automatically move it in a straight line up to 30 feet toward or away from you, but not beyond the range of this spell. If the object is being worn or carried by an unwilling creature, you must make an ability check with your spellcasting ability contested by that creature’s Strength check. If you succeed, you pull the object away from that creature and can move it in a straight line up to 30 feet toward or away from you, but not beyond the range of this spell. If the object is a worn object that cannot easily be removed (such as armor) and you win the contest, the targeted creature also moves with the metal object. On subsequent rounds, you can use your action to attempt to maintain your grip on the creature by repeating the contest. If the combined weight of the object and the creature exceed 500 pounds, the target cannot be moved."
+};
+SpellsList["erase"] = {
+	name : "Devouring Worm",
+	classes : ["bard", "cleric", "sorcerer", "warlock", "wizard"],
+	source : ["ARC:3", 10],
+	level : 1,
+	school : "Trans",
+	time : "1 a",
+	range : "30 ft",
+	components : "V,S,M",
+	compMaterial : "the nib of a quill",
+	duration : "Instantaneous",
+	description : "You remove writing that you can see within range; no larger than a 2-foot-square area; see book",
+	descriptionFull : "You remove writing from a single scroll, one page of paper, a sheet of parchment, or a similar surface that you can see within range that is no larger than a 2-foot-square area. This spell can also automatically remove a glyph of warding or a glyph created by the symbol spell. If the glyph was created using a spell slot of 4th level or higher, you must make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level. On a successful check, the glyph is erased."
+};
+SpellsList["glitterdust"] = {
+	name : "Glitterdust",
+	classes : ["bard", "cleric", "sorcerer", "wizard"],
+	source : ["ARC:3", 11],
+	level : 3,
+	school : "Evoc",
+	time : "1 a",
+	range : "Self (15 ft cone)",
+	components : "V,S,M",
+	compMaterial : "a packet of confetti",
+	duration : "1 min",
+  save : "Con"
+	description : "15 ft cone glitter coats all creatures, no benif invis, con save or blinded, repeat end of turn",
+	descriptionFull : "You spray a shower of golden glitter from your hands. Each creature in a 15-foot cone becomes coated in glitter for the spell’s duration, and affected creatures or objects can’t benefit from being invisible. In addition, any creature in the area when the spell is cast must succeed on a Constitution saving throw or become blinded for the duration. A blinded creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+};
+SpellsList["nature's ladder"] = {
+	name : "Nature’s Ladder",
+	classes : ["druid", "ranger"],
+	source : ["ARC:3", 11],
+	level : 1,
+	school : "Trans",
+	time : "1 a",
+	range : "60 ft",
+	components : "V,S,M",
+	compMaterial : "an acorn",
+	duration : "24 h",
+	save : "Wis",
+	description : "grow tree, choose up to 20 ft tall, climbable,1 ft diam, 5ac25hp van aft dur or death, lv x height",
+	descriptionFull : "You cause a tree to sprout from an unoccupied space of solid ground that you can see within range. When you cast the spell, you determine the height of the tree, which can be a maximum of 20 feet tall. If there isn’t enough room for the tree to grow to full height, the tree attains the maximum possible height in the space available. The tree has a 1-foot-diameter trunk and evenly spaced branches perfect for climbing. The tree has AC 5 and 25 hit points. After 24 hours, or if the tree is reduced to 0 hit points, it instantly vanishes. At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can increase the height of the tree by 20 feet for each slot level above 1st."
+};
+SpellsList["permanency"] = {
+	name : "Permanency",
+	classes : ["wizard"],
+	source : ["ARC:3", 11],
+	level : 8,
+	school : "Ench",
+	time : "1 h",
+	range : "Self",
+	components : "V,S,M\u0192",
+	compMaterial : "the highest-quality components available for a particular spell costing 1,000 gp per level of the permanent spell: 1,000 gp for a 1st-level spell, 2,000 gp for a 2nd-level spell, etc.",
+	duration : "Until dispelled",
+	save : "Con",
+	description : "spell lv =>5 due 1 min+ time 1hr =<;cast it also,no conc/upkeep till dispelled",
+	descriptionFull : "This spell makes certain other spells you cast on yourself permanent. Choose a spell of 5th level or lower that you can cast, has a duration of 1 minute or longer, a casting time of 1 hour or shorter, and can target you. You cast that spell as part of casting permanency, expending spell slots for both. The spell cast with permanency takes effect immediately and lasts until dispelled. Spells made permanent in this way no longer require concentration to maintain and do not require the use of a spell slot beyond the initial casting. If the spell you cast with the permanency spell is dispelled (such as by the dispel magic spell), then both that spell and permanency are dispelled and vice versa. You can only be affected by one permanent spell at a time."
+};
+SpellsList["rainbow recurve"] = {
+	name : "Rainbow Recurve",
+	classes : ["bard", "sorcerer", "wizard"],
+	source : ["ARC:3", 12],
+	level : 6,
+	school : "Evoc",
+	time : "1 a",
+	range : "150 ft",
+	components : "V,S,M",
+	compMaterial : "small glass prism",
+	duration : "Conc, 1 min",
+	save : "Dex",
+	description : "make a rain-bow, r-spellatk, 3d8, dex save vs adtl; 1x choice each atk ROYGBIV; See Book",
+	descriptionFull : "You summon a longbow formed of swirling rainbow hues to your hands. When the bow appears, you choose an arrow color and make a ranged spell attack against a target of your choice within range. On a hit, the target takes 3d8 force damage and must succeed on a Dexterity saving throw or face an additional effect determined by the color of the arrow used. Until the spell ends, you can use an action on each of your turns to make another ranged spell attack, selecting an arrow of a different color each time you do. Once you fire an arrow, the corresponding color disappears from the bow, and you can’t select that color again during this particular casting of the spell. When the duration ends or when you have used all seven colors, the bow vanishes. Red. The target takes an additional 3d8 fire damage. Orange. The target takes an additional 3d8 acid damage. Yellow. The target takes an additional 3d8 lightning damage. Green. The target takes an additional 3d8 poison damage. Blue. The target takes an additional 3d8 cold damage. Indigo. On a failed save, the target is paralyzed. It can make a Constitution saving throw at the end of each of its turns, ending the paralyzed condition on a success. Violet. On a failed save, the target is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blinded condition. If it fails that save, the creature is transported to another plane of existence of the GM’s choosing and is no longer blinded. (Typically, a creature that is on a plane that isn’t its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal Planes.)"
+};
+SpellsList["shrink"] = {
+	name : "Shrink",
+	classes : ["sorcerer", "wizard"],
+	source : ["ARC:3", 13],
+	level : 3,
+	school : "Trans",
+	time : "1 a",
+	range : "30 ft",
+	components : "V,S,M",
+	compMaterial : "a raisin",
+	duration : "Conc, 1 h",
+	save : "Con",
+	description : "1 crea/obj becomes tiny,1 in tall 1lbs, dropped grow, disadv str chk and sav, wpn deal 1 dmg, spd/2",
+	descriptionFull : "You cause a creature or an object you can see within range to shrink for the duration. Choose either a creature or an object that is not worn or held. If the target is an unwilling creature, it can make a Constitution saving throw. On a success, the spell has no effect. The target becomes Tiny, shrinking to a height of 1 inch, and it weighs 1 pound, unless it already was smaller or weighed less before the spell was cast. If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once. Until the spell ends, the target has disadvantage on Strength checks and Strength saving throws. The target’s weapons also shrink to match its new size. While these weapons are reduced, the target’s attacks with them deal 1 damage. If the creature was not already Tiny before this spell was cast, its speed is halved for the duration."
+};
+SpellsList["silver wings"] = {
+	name : "Silver Wings",
+	classes : ["sorcerer", "warlock", "wizard"],
+	source : ["ARC:3", 13],
+	level : 4,
+	school : "Trans",
+	time : "1 a",
+	range : "Self",
+	components : "V,S,M\u0192",
+	compMaterial : "a silver needle",
+	duration : "Conc, 10 min",
+	description : "Grow wings, 60 fly, when end fall, 1 bns melee SA 10ft 2d6S maj; 1bns end early 60 cone dex 3d8/2",
+	descriptionFull : "You grow a pair of metallic, feathered wings. These wings grant you a fly speed of 60 feet for the duration. When the spell ends, you fall if you are still aloft, unless you can stop the fall. While the spell is active, you can use a bonus action to make a melee spell attack with the wings against a target within 10 feet of you. On a hit, the target takes 2d6 slashing damage. The wings are magical weapons. As a bonus action, you can choose to end the spell and launch the metallic feathers in a 60-foot cone of razor- sharp blades. Each creature in the cone must make a Dexterity saving throw. A creature takes 3d8 piercing damage on a failed save, or half as much damage on a successful one."
+};
+SpellsList["stoneheart"] = {
+	name : "Stoneheart",
+	classes : ["druid", "warlock", "wizard"],
+	source : ["ARC:3", 13],
+	level : 7,
+	school : "Necro",
+	time : "1 h",
+	range : "Self",
+	components : "V,S,M",
+  compMaterial : "a humanoid heart carved from a gemstone of exceptional quality worth at least 1,000 gp"
+	duration : "Conc, 1 y",
+	description : "Jar of dirt yourself, w/in 1 mile [REQ], auto pass death sav; see book",
+	descriptionFull : "You exchange your own living heart for the finely crafted heart of stone you used for the spell’s material component. Your living heart can then be stored or hidden anywhere you like, but must remain within 1 mile of you to keep the spell active, where it continues to beat for the duration. While your heart is removed in this manner, you automatically succeed on all death saving throws. If you die, but your original heart remains intact, you gain a new body with a new stone heart in 1d10 days and return to life with all your hit points. Your new body appears within 5 feet of your original heart. While you possess a stone heart, you lose the ability to heal naturally during a short or long rest, and can only restore hit points through magical healing. If your living heart is damaged or destroyed, you are instantly slain. You can choose to end the spell as a bonus action. The spell ends automatically if you travel more than 1 mile from your living heart. When the spell ends, your own living heart instantly returns to its proper place, and the stone heart is destroyed."
+};
+SpellsList["walking dead"] = {
+	name : "Walking Dead",
+	classes : ["druid", "warlock", "wizard"],
+	source : ["ARC:3", 14],
+	level : 7,
+	school : "Necro",
+	time : "10 d",
+	range : "Touch",
+	components : "V,S,M",
+  compMaterial : "a vial of smelling salts"
+	description : "psudo rez intact corpse w/in last d; invest(int) vs saveDC; see book",
+	descriptionFull : "You animate the corpse of a creature that has died within the past day whose body is still intact. For the duration, you restore a semblance of life to the deceased creature, putting the reanimated subject in a half-life state but not truly reconnecting the soul to the body. The reanimated creature has 1 hit point and can move as they could in life. In this state, a target is unable to attack, use spells, or take similarly complex actions. If the creature could speak in life, it has the ability to do so, though its memory is cloudy, making it difficult for the subject to remember even the basic details of its past life. During a limited interaction, the animated corpse could be passed off as alive, but extended conversation reveals something is amiss. A creature that uses its action to examine the body can determine that it is not alive with a successful Intelligence (Investigation) check against your spell save DC. The spell also effectively extends the time limit on raising the target from the dead, since days spent reanimated does not count against the time limit of spells such as raise dead, and the reanimated body does not decay. A creature reanimated in this way is not undead, and it can be resurrected by any spell that would return a fully dead creature to life."
+};
