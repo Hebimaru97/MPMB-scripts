@@ -11,7 +11,7 @@
 				This is taken from UA21MoS 
 				This subclass is made by WOTC
 	Code by:	Hebi
-	Date:		2022-10-01 (sheet v13.1.2
+	Date:		2022-10-01 (sheet v13.1.2)
 */
 
 var iFileName = "Druid - Mage of Witherbloom.js";
