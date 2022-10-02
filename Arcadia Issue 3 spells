@@ -63,7 +63,7 @@ SpellsList["glitterdust"] = {
 	components : "V,S,M",
 	compMaterial : "a packet of confetti",
 	duration : "1 min",
-	save : "Con"
+	save : "Con",
 	description : "15 ft cone glitter coats all creatures, no benif invis, con save or blinded, repeat end of turn",
 	descriptionFull : "You spray a shower of golden glitter from your hands. Each creature in a 15-foot cone becomes coated in glitter for the spell’s duration, and affected creatures or objects can’t benefit from being invisible. In addition, any creature in the area when the spell is cast must succeed on a Constitution saving throw or become blinded for the duration. A blinded creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 };
