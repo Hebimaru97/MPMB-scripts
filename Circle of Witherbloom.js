@@ -84,5 +84,5 @@ var theCoD = AddSubClass("druid", "mage of witherbloom", {
 });
 
 if (ClassSubList[theCoD] && sheetVersion < 13) {
-	ClassSubList[theCoD].spellcastingExtra = ["abi-dalzim's horrid wilting", "ray of enfeeblement", "ray of sickness", "revivify", "vampiric touch"];
+	ClassSubList[theCoD].spellcastingExtra = ["spare the dying", "lesser restoration", "ray of enfeeblement", "blight", "greater restoration", "antilife shell", "mass cure wounds", "revivify", "vampiric touch"];
 	};
